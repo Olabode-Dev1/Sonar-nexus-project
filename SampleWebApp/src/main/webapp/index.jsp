@@ -4,7 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+        body, h1, h2, p, ul, li, form, input, textarea, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 2rem;
+            background: #f4f4f4;
+        }
+
+        .hero button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background: #45a049;
+        }
+
+        /* About Section */
+        section {
+            padding: 2rem;
+        }
+
+        /* Form */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -44,6 +149,10 @@
     <footer>
         <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("alertButton").addEventListener("click", function () {
+            alert("Button clicked!");
+        });
+    </script>
 </body>
 </html>
